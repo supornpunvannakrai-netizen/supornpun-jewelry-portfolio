@@ -215,13 +215,14 @@ ${css}
             <div class="trial-image"><img src="media/complimentary-trial-visual-2.png" alt="Complimentary jewelry visual direction trial" /></div>
             <div>
               ${title("Complimentary Trial", "Start with one product image.", "Share one jewelry packshot and a short creative brief. The trial includes one complimentary retouched image and one complimentary social-ad visual concept.")}
-              <form class="trial-form" action="mailto:supornpunvannakrai@gmail.com?subject=Free%20Trial%20Request" method="post" enctype="text/plain">
+              <form class="trial-form" id="trial-form">
                 <label>Company name<input type="text" name="company" placeholder="Brand or company name" /></label>
                 <label>Contact name<input type="text" name="contact" placeholder="Your name" /></label>
                 <label>Email / Line / WhatsApp<input type="text" name="contactInfo" placeholder="Best way to contact you" /></label>
                 <label>Product image<input type="file" name="productImage" accept="image/*" /></label>
                 <label class="full-field">Desired mood & tone<textarea name="brief" placeholder="Tell us the visual direction you want to explore."></textarea></label>
                 <button type="submit">Request Free Trial</button>
+                <p class="form-note" id="trial-note" hidden></p>
               </form>
             </div>
           </div>
@@ -252,6 +253,35 @@ ${css}
         addEventListener("scroll", update, { passive: true });
         addEventListener("resize", update);
         update();
+      })();
+      (() => {
+        const form = document.querySelector("#trial-form");
+        if (!form) return;
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const data = new FormData(form);
+          const image = data.get("productImage");
+          const fileName = image && image.name ? image.name : "Not selected";
+          const body = [
+            "Free Trial Request",
+            "",
+            "Company name: " + (data.get("company") || ""),
+            "Contact name: " + (data.get("contact") || ""),
+            "Email / Line / WhatsApp: " + (data.get("contactInfo") || ""),
+            "Product image file: " + fileName,
+            "",
+            "Desired mood & tone:",
+            data.get("brief") || "",
+            "",
+            "Note: Please attach the product image file before sending this email."
+          ].join("\\n");
+          location.href = "mailto:supornpunvannakrai@gmail.com?subject=" + encodeURIComponent("Free Trial Request") + "&body=" + encodeURIComponent(body);
+          const note = document.querySelector("#trial-note");
+          if (note) {
+            note.hidden = false;
+            note.textContent = "Your email app will open with the request details. Please attach the product image before sending.";
+          }
+        });
       })();
     </script>
   </body>

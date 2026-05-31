@@ -142,6 +142,7 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .full-field, .trial-form button { grid-column: 1 / -1; }
 .trial-form button { cursor: pointer; border: 1px solid var(--ink); background: var(--ink); padding: 15px 20px; color: white; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; transition: background .2s ease, color .2s ease; }
 .trial-form button:hover { background: white; color: var(--ink); }
+.form-note { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; letter-spacing: 0; text-transform: none; }
 
 .footer { background: var(--ink); color: white; padding-block: 88px 0; }
 .footer-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(260px,.45fr); gap: 48px; }

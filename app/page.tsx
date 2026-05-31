@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ScrollJewelScene from "./ScrollJewelScene";
+import TrialForm from "./TrialForm";
 
 const portfolio = [
   {
@@ -426,19 +427,7 @@ export default function Home() {
             </div>
             <div>
               <SectionTitle eyebrow="Complimentary Trial" title="Start with one product image." copy="Share one jewelry packshot and a short creative brief. The trial includes one complimentary retouched image and one complimentary social-ad visual concept." />
-              <form
-                className="trial-form"
-                action="mailto:supornpunvannakrai@gmail.com?subject=Free%20Trial%20Request"
-                method="post"
-                encType="text/plain"
-              >
-                <label>Company name<input type="text" name="company" placeholder="Brand or company name" /></label>
-                <label>Contact name<input type="text" name="contact" placeholder="Your name" /></label>
-                <label>Email / Line / WhatsApp<input type="text" name="contactInfo" placeholder="Best way to contact you" /></label>
-                <label>Product image<input type="file" name="productImage" accept="image/*" /></label>
-                <label className="full-field">Desired mood & tone<textarea name="brief" placeholder="Tell us the visual direction you want to explore." /></label>
-                <button type="submit">Request Free Trial</button>
-              </form>
+              <TrialForm />
             </div>
           </div>
         </section>
