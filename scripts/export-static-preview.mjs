@@ -37,15 +37,15 @@ const creativePackages = [
 ];
 
 const retouch = [
-  ["Jewelry Retouching 2 Images", "US$5", "2-day delivery", "2 revisions", ["2 images", "Source file included", "Printable resolution", "Commercial use", "White background cleanup", "Natural shadow correction"]],
-  ["Jewelry Retouching 5 Images", "US$10", "3-day delivery", "3 revisions", ["5 images", "Source file included", "Printable resolution", "Commercial use", "Advanced multi-product cleanup", "Consistent product-set tone"]],
-  ["Jewelry Retouching 10 Images", "US$20", "5-day delivery", "4 revisions", ["10 images", "Source file included", "Printable resolution", "Commercial use", "Batch packshot direction", "Catalog-ready consistency"]],
+  ["Jewelry Retouching 2 Images", "$5", "2-day delivery", "2 revisions", ["2 images", "Source file included", "Printable resolution", "Commercial use", "White background cleanup", "Natural shadow correction"]],
+  ["Jewelry Retouching 5 Images", "$10", "3-day delivery", "3 revisions", ["5 images", "Source file included", "Printable resolution", "Commercial use", "Advanced multi-product cleanup", "Consistent product-set tone"]],
+  ["Jewelry Retouching 10 Images", "$20", "5-day delivery", "4 revisions", ["10 images", "Source file included", "Printable resolution", "Commercial use", "Batch packshot direction", "Catalog-ready consistency"]],
 ];
 
 const ai = [
-  ["Starter AI Jewelry Visual", "US$25", "2-day delivery", "2 revisions", ["1 AI jewelry image", "Luxury model direction", "Professional skin retouching", "Realistic jewelry lighting", "Image enhancement", "Commercial-use concept"]],
-  ["AI Jewelry Social Set", "US$50", "3-day delivery", "3 revisions", ["2 AI jewelry images", "Luxury model styling", "Social ad mood and tone", "Background refinement", "Upscale and polish", "Brand-ready visual set"]],
-  ["AI Jewelry Campaign Set", "US$75", "5-day delivery", "4 revisions", ["4 AI jewelry visuals", "Campaign mood direction", "Model/background options", "High-end sparkle and lighting", "Social-ready layouts", "Commercial-use concepts"]],
+  ["Starter AI Jewelry Visual", "$25", "2-day delivery", "2 revisions", ["1 AI jewelry image", "Luxury model direction", "Professional skin retouching", "Realistic jewelry lighting", "Image enhancement", "Commercial-use concept"]],
+  ["AI Jewelry Social Set", "$50", "3-day delivery", "3 revisions", ["2 AI jewelry images", "Luxury model styling", "Social ad mood and tone", "Background refinement", "Upscale and polish", "Brand-ready visual set"]],
+  ["AI Jewelry Campaign Set", "$75", "5-day delivery", "4 revisions", ["4 AI jewelry visuals", "Campaign mood direction", "Model/background options", "High-end sparkle and lighting", "Social-ready layouts", "Commercial-use concepts"]],
 ];
 
 const title = (eyebrow, heading, copy = "") => `
