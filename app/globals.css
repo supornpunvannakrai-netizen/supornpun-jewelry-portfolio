@@ -32,8 +32,8 @@ button, input, textarea { font: inherit; }
 .nav-links a:hover, .nav-cta:hover { opacity: .58; }
 .nav-cta { border-bottom: 1px solid white; padding-bottom: 5px; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; }
 
-.hero { position: relative; min-height: 90svh; overflow: hidden; color: white; background: #33302d url("/media/diamond-model-campaign.jpg") center / cover no-repeat; }
-.hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero { position: relative; min-height: 90svh; overflow: hidden; color: white; background: #181716; }
+.hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #181716; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg,rgba(0,0,0,.56),rgba(0,0,0,.12) 60%,rgba(0,0,0,.26)), linear-gradient(180deg,rgba(0,0,0,.24),transparent 52%,rgba(0,0,0,.38)); }
 .hero-content { position: relative; z-index: 1; display: flex; min-height: 90svh; flex-direction: column; justify-content: center; padding-top: 76px; }
 .hero-kicker, .hero-note, .eyebrow, .section-index, .work-index { font-size: 11px; letter-spacing: .28em; text-transform: uppercase; }

@@ -92,7 +92,7 @@ const html = `<!doctype html>
     <style>
 ${css}
       img, video { display: block; max-width: 100%; }
-      .hero { background: #33302d url("media/diamond-model-campaign.jpg") center / cover no-repeat; }
+      .hero { background: #181716; }
       .portfolio-grid img { width: 100%; height: 100%; object-fit: contain; padding: 7%; }
       .service-image-card > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
       .service-image-card.is-contain > img { object-fit: contain; object-position: center top; padding: 18px; background: white; }
@@ -112,7 +112,7 @@ ${css}
       </header>
       <main>
         <section id="hero" class="hero">
-          <video class="hero-video" src="media/hero-motion.mp4" poster="media/white-gold-sapphire-ring.jpg" autoplay muted loop playsinline></video>
+          <video class="hero-video" src="media/hero-motion.mp4" preload="auto" autoplay muted loop playsinline></video>
           <div class="hero-shade"></div>
           <div class="wide-shell hero-content">
             <p class="hero-kicker">Jewelry Visual Production Specialist</p>

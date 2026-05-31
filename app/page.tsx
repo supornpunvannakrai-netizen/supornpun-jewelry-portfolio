@@ -238,7 +238,7 @@ export default function Home() {
           <video
             className="hero-video"
             src="/media/hero-motion.mp4"
-            poster="/media/white-gold-sapphire-ring.jpg"
+            preload="auto"
             autoPlay
             muted
             loop
