@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ScrollJewelScene from "./ScrollJewelScene";
 import TrialForm from "./TrialForm";
 
 const portfolio = [
@@ -217,7 +216,6 @@ function PackageTabs({
 export default function Home() {
   return (
     <main>
-      <ScrollJewelScene />
       <div className="site-layer">
         <header className="site-header">
           <nav className="wide-shell nav-inner">

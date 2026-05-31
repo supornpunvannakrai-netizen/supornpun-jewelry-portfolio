@@ -162,26 +162,6 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .social-dot { color: var(--ink); text-transform: lowercase; transition: background .25s ease, color .25s ease, border-color .25s ease; }
 .social-dot:hover { background: var(--ink); border-color: var(--ink); color: white; }
 
-.jewel-scene { position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .22; }
-.css-jewel { position: absolute; right: 7vw; top: 28vh; width: 220px; height: 220px; transform-style: preserve-3d; transform: perspective(900px) rotateX(calc(28deg + var(--scroll-tilt, 0deg))) rotateY(calc(-34deg + var(--scroll-spin, 0deg))); transition: transform .08s linear; }
-.css-jewel span { position: absolute; inset: 42px; border: 1px solid rgba(169,123,54,.48); background: rgba(255,255,255,.18); clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%); }
-.css-jewel span:nth-child(1) { transform: translateZ(38px) rotateZ(45deg); }
-.css-jewel span:nth-child(2) { transform: rotateY(90deg) translateZ(38px) rotateZ(45deg); }
-.css-jewel span:nth-child(3) { transform: rotateX(90deg) translateZ(38px) rotateZ(45deg); }
-.css-jewel span:nth-child(4) { transform: translateZ(-38px) rotateZ(45deg); }
-.diamond-rain { position: absolute; inset: 0; overflow: hidden; }
-.diamond-rain i { position: absolute; top: -70px; width: 16px; height: 16px; border: 1px solid rgba(169,123,54,.36); background: rgba(255,255,255,.24); clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%); transform: translateY(var(--diamond-fall,0px)) rotate(45deg); }
-.diamond-rain i:nth-child(1) { left: 8%; }
-.diamond-rain i:nth-child(2) { left: 19%; top: 130px; width: 11px; height: 11px; }
-.diamond-rain i:nth-child(3) { left: 34%; top: 60px; width: 22px; height: 22px; }
-.diamond-rain i:nth-child(4) { left: 49%; top: 240px; width: 12px; height: 12px; }
-.diamond-rain i:nth-child(5) { left: 61%; top: 110px; width: 18px; height: 18px; }
-.diamond-rain i:nth-child(6) { left: 75%; width: 10px; height: 10px; }
-.diamond-rain i:nth-child(7) { left: 87%; top: 180px; width: 21px; height: 21px; }
-.diamond-rain i:nth-child(8) { left: 14%; top: 410px; }
-.diamond-rain i:nth-child(9) { left: 54%; top: 500px; width: 10px; height: 10px; }
-.diamond-rain i:nth-child(10) { left: 82%; top: 540px; }
-
 @media (max-width: 860px) {
   .wide-shell { width: min(calc(100% - 28px), 720px); }
   .services-head h2,
@@ -242,7 +222,6 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .contact-item { min-height: auto; padding: 18px 20px; border-right: 0; border-bottom: 1px solid rgba(169,123,54,.25); }
   .contact-item:last-child { border-bottom: 0; }
   .contact-connect { justify-content: flex-start; }
-  .jewel-scene { opacity: .12; }
 }
 
 @media (prefers-reduced-motion: reduce) {

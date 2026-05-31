@@ -102,10 +102,6 @@ ${css}
     </style>
   </head>
   <body>
-    <div class="jewel-scene" aria-hidden="true">
-      <div class="css-jewel"><span></span><span></span><span></span><span></span></div>
-      <div class="diamond-rain"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-    </div>
     <div class="site-layer">
       <header class="site-header">
         <nav class="wide-shell nav-inner">
@@ -242,18 +238,6 @@ ${css}
       </footer>
     </div>
     <script>
-      (() => {
-        const update = () => {
-          const max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
-          const progress = scrollY / max;
-          document.documentElement.style.setProperty("--scroll-spin", (progress * 190) + "deg");
-          document.documentElement.style.setProperty("--scroll-tilt", (progress * 64) + "deg");
-          document.documentElement.style.setProperty("--diamond-fall", (progress * 540) + "px");
-        };
-        addEventListener("scroll", update, { passive: true });
-        addEventListener("resize", update);
-        update();
-      })();
       (() => {
         const form = document.querySelector("#trial-form");
         if (!form) return;
