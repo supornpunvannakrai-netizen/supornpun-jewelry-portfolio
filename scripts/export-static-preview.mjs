@@ -212,11 +212,12 @@ ${css}
             <div>
               ${title("Complimentary Trial", "Start with one product image.", "Share one jewelry packshot and a short creative brief. The trial includes one complimentary retouched image and one complimentary social-ad visual concept.")}
               <form class="trial-form" id="trial-form">
-                <label>Company name<input type="text" name="company" placeholder="Brand or company name" /></label>
-                <label>Contact name<input type="text" name="contact" placeholder="Your name" /></label>
-                <label>Email / Line / WhatsApp<input type="text" name="contactInfo" placeholder="Best way to contact you" /></label>
-                <label>Product image<input type="file" name="productImage" accept="image/*" /></label>
-                <label class="full-field">Desired mood & tone<textarea name="brief" placeholder="Tell us the visual direction you want to explore."></textarea></label>
+                <label>Company name<input type="text" name="company" placeholder="Brand or company name" required /></label>
+                <label>Contact name<input type="text" name="contact" placeholder="Your name" required /></label>
+                <label>Email / Line / WhatsApp<input type="text" name="contactInfo" placeholder="Best way to contact you" required /></label>
+                <label>Product image<input type="file" name="productImage" accept="image/*" required /></label>
+                <label class="full-field">Desired mood & tone<textarea name="brief" placeholder="Tell us the visual direction you want to explore." required></textarea></label>
+                <label class="hp-field" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
                 <button type="submit">Request Free Trial</button>
                 <p class="form-note" id="trial-note" hidden></p>
               </form>
@@ -227,13 +228,13 @@ ${css}
       <footer id="contact" class="footer">
         <div class="wide-shell footer-grid">
           <div><p class="eyebrow">Contact</p><h2>Let the jewelry hold the attention.</h2></div>
-          <div class="footer-info"><p>Supornpun Wannakrai</p><p>Jewelry Visual Production Specialist</p><p>Independent Jewelry Visual Services</p><a href="mailto:supornpunvannakrai@gmail.com">Start a project <span>+</span></a></div>
+          <div class="footer-info"><p>Supornpun Wannakrai</p><p>Jewelry Visual Production Specialist</p><p>Independent Jewelry Visual Services</p><a href="#offer">Start a project <span>+</span></a></div>
         </div>
         <div class="wide-shell contact-strip" aria-label="Contact details">
-          <a class="contact-item" href="mailto:supornpunvannakrai@gmail.com"><span class="contact-icon" aria-hidden="true">@</span><span><strong>Email</strong><em>supornpunvannakrai@gmail.com</em></span></a>
+          <div class="contact-item"><span class="contact-icon" aria-hidden="true">@</span><span><strong>Email</strong><em>supornpunvannakrai@gmail.com</em></span></div>
           <a class="contact-item" href="tel:+66843302202"><span class="contact-icon" aria-hidden="true">P</span><span><strong>Phone</strong><em>+66 84 330 2202</em></span></a>
           <div class="contact-item"><span class="contact-icon" aria-hidden="true">L</span><span><strong>Location</strong><em>Bangkok, Thailand<br />Remote Worldwide</em></span></div>
-          <div class="contact-item contact-connect"><span><strong>Connect</strong><em>Professional profile</em></span><a class="social-dot" href="https://www.linkedin.com/in/supornpun-wannakrai-1a33728b/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">in</a><a class="social-dot" href="mailto:supornpunvannakrai@gmail.com" aria-label="Email Supornpun Wannakrai">@</a></div>
+          <div class="contact-item contact-connect"><span><strong>Connect</strong><em>Professional profile</em></span><a class="social-dot" href="https://www.linkedin.com/in/supornpun-wannakrai-1a33728b/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">in</a><a class="social-dot" href="#offer" aria-label="Start a free trial request">@</a></div>
         </div>
       </footer>
     </div>
@@ -243,27 +244,10 @@ ${css}
         if (!form) return;
         form.addEventListener("submit", (event) => {
           event.preventDefault();
-          const data = new FormData(form);
-          const image = data.get("productImage");
-          const fileName = image && image.name ? image.name : "Not selected";
-          const body = [
-            "Free Trial Request",
-            "",
-            "Company name: " + (data.get("company") || ""),
-            "Contact name: " + (data.get("contact") || ""),
-            "Email / Line / WhatsApp: " + (data.get("contactInfo") || ""),
-            "Product image file: " + fileName,
-            "",
-            "Desired mood & tone:",
-            data.get("brief") || "",
-            "",
-            "Note: Please attach the product image file before sending this email."
-          ].join("\\n");
-          location.href = "mailto:supornpunvannakrai@gmail.com?subject=" + encodeURIComponent("Free Trial Request") + "&body=" + encodeURIComponent(body);
           const note = document.querySelector("#trial-note");
           if (note) {
             note.hidden = false;
-            note.textContent = "Your email app will open with the request details. Please attach the product image before sending.";
+            note.textContent = "Online submission is available on the deployed website. Please use supornpunstudio.com to send your request.";
           }
         });
       })();

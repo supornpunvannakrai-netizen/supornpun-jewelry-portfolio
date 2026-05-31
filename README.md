@@ -27,4 +27,12 @@ npm run build
 
 ## Notes
 
-The contact form currently uses a `mailto:` fallback. To submit without opening the visitor's email app, add a server-side form handler with an email service such as Resend.
+The free-trial form posts to `/api/free-trial` and sends the product image through Resend.
+
+Before using the form in production:
+
+1. Verify `supornpunstudio.com` in Resend.
+2. Add `RESEND_API_KEY` to the Vercel project's environment variables.
+3. Redeploy the project.
+
+The form accepts one product image smaller than 3 MB.

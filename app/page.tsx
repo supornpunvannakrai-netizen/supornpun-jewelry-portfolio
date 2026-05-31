@@ -440,17 +440,17 @@ export default function Home() {
               <p>Supornpun Wannakrai</p>
               <p>Jewelry Visual Production Specialist</p>
               <p>Independent Jewelry Visual Services</p>
-              <a href="mailto:supornpunvannakrai@gmail.com">Start a project <span aria-hidden="true">+</span></a>
+              <a href="#offer">Start a project <span aria-hidden="true">+</span></a>
             </div>
           </div>
           <div className="wide-shell contact-strip" aria-label="Contact details">
-            <a className="contact-item" href="mailto:supornpunvannakrai@gmail.com">
+            <div className="contact-item">
               <span className="contact-icon" aria-hidden="true">@</span>
               <span>
                 <strong>Email</strong>
                 <em>supornpunvannakrai@gmail.com</em>
               </span>
-            </a>
+            </div>
             <a className="contact-item" href="tel:+66843302202">
               <span className="contact-icon" aria-hidden="true">P</span>
               <span>
@@ -479,7 +479,7 @@ export default function Home() {
               >
                 in
               </a>
-              <a className="social-dot" href="mailto:supornpunvannakrai@gmail.com" aria-label="Email Supornpun Wannakrai">
+              <a className="social-dot" href="#offer" aria-label="Start a free trial request">
                 @
               </a>
             </div>
