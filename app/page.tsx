@@ -312,17 +312,18 @@ export default function Home() {
           <div className="service-image-grid">
             {serviceCards.map((service) => (
               <article className={`service-image-card ${"fit" in service ? "is-contain" : ""}`} key={service.number}>
-                {"video" in service ? (
-                  <video src={service.video} autoPlay muted loop playsInline />
-                ) : (
-                  <Image
-                    src={service.image}
-                    alt={`${service.title} service example`}
-                    fill
-                    sizes="(max-width: 860px) 100vw, 33vw"
-                    className="object-cover"
-                  />
-                )}
+                <div className="service-media">
+                  {"video" in service ? (
+                    <video src={service.video} autoPlay muted loop playsInline />
+                  ) : (
+                    <Image
+                      src={service.image}
+                      alt={`${service.title} service example`}
+                      fill
+                      sizes="(max-width: 860px) 100vw, 33vw"
+                    />
+                  )}
+                </div>
                 <div className="service-hover-content">
                   <span>{service.number}</span>
                   <h3>{service.title}</h3>

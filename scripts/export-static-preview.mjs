@@ -156,9 +156,11 @@ ${css}
           <div class="service-image-grid">
             ${services.map(([number, name, media, mediaType, fit, intro, items, idealFor]) => `
               <article class="service-image-card ${fit === "contain" ? "is-contain" : ""}">
-                ${mediaType === "video"
-                  ? `<video src="media/${media}" autoplay muted loop playsinline></video>`
-                  : `<img src="media/${media}" alt="${name} service example" />`}
+                <div class="service-media">
+                  ${mediaType === "video"
+                    ? `<video src="media/${media}" autoplay muted loop playsinline></video>`
+                    : `<img src="media/${media}" alt="${name} service example" />`}
+                </div>
                 <div class="service-hover-content">
                   <span>${number}</span>
                   <h3>${name}</h3>
