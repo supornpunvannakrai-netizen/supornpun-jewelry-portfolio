@@ -209,11 +209,16 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .about-grid .section-index { margin: 0 0 18px; }
   .about-copy { margin-top: 25px; }
   .service-image-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
-  .service-image-card { min-height: 620px; }
-  .service-image-card img { opacity: .36; }
-  .service-image-card video { opacity: .36; }
+  .service-image-card { display: grid; min-height: 0; overflow: visible; }
+  .service-image-card img,
+  .service-image-card video { position: relative; inset: auto; width: 100%; height: auto; aspect-ratio: 4 / 5; opacity: 1; object-fit: cover; }
+  .service-image-card.is-contain img { aspect-ratio: 3 / 4; padding: 14px; object-fit: contain; object-position: center top; }
+  .service-image-card:hover img,
+  .service-image-card:hover video,
+  .service-image-card:focus-within img,
+  .service-image-card:focus-within video { opacity: 1; transform: none; }
   .service-card-label { display: none; }
-  .service-hover-content { justify-content: end; padding: 24px; background: linear-gradient(180deg, rgba(251,251,248,.35), rgba(251,251,248,.96)); opacity: 1; }
+  .service-hover-content { position: relative; inset: auto; justify-content: start; padding: 24px; background: #fbfbf8; opacity: 1; }
   .service-hover-content h3 { font-size: 31px; }
   .package-structure-head { margin-top: 76px; }
   .creative-package-grid { grid-template-columns: 1fr; }
