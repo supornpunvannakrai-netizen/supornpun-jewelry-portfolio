@@ -1,69 +1,6 @@
 import Image from "next/image";
 import TrialForm from "./TrialForm";
 
-const portfolio = [
-  {
-    src: "/media/portfolio-bracelet.png",
-    title: "Gemstone Bracelet",
-    type: "Product Retouching",
-  },
-  {
-    src: "/media/diamond-model-campaign.jpg",
-    title: "Diamond Model Visual",
-    type: "Campaign Visual",
-  },
-  {
-    src: "/media/portfolio-ruby-ring.jpg",
-    title: "Ruby Ring Packshot",
-    type: "E-commerce Visual",
-  },
-  {
-    src: "/media/portfolio-earrings-0323.jpg",
-    title: "Diamond Earrings",
-    type: "Product Retouching",
-  },
-  {
-    src: "/media/portfolio-gold-ring.jpg",
-    title: "Gold Ring",
-    type: "Packshot Retouching",
-  },
-  {
-    src: "/media/portfolio-emerald-earrings.jpg",
-    title: "Emerald Earrings",
-    type: "Catalog Image",
-  },
-  {
-    src: "/media/white-gold-sapphire-ring.jpg",
-    title: "White Gold Sapphire Ring",
-    type: "Packshot Retouching",
-  },
-  {
-    src: "/media/portfolio-ring-3062.jpg",
-    title: "Diamond Ring",
-    type: "Product Visual",
-  },
-  {
-    src: "/media/portfolio-earrings-pink.jpg",
-    title: "Pink Gem Earrings",
-    type: "Jewelry Photography",
-  },
-  {
-    src: "/media/portfolio-ring-em-2.jpg",
-    title: "Emerald Ring",
-    type: "Product Retouching",
-  },
-  {
-    src: "/media/portfolio-ring-em-3.jpg",
-    title: "Emerald Diamond Ring",
-    type: "E-commerce Visual",
-  },
-  {
-    src: "/media/portfolio-before-after-earrings.jpg",
-    title: "Earring Retouch Study",
-    type: "Before / After",
-  },
-];
-
 const serviceCards = [
   {
     number: "01",
@@ -262,25 +199,23 @@ export default function Home() {
             />
             <p className="work-index">01 / Portfolio</p>
           </div>
-          <div className="portfolio-grid">
-            {portfolio.map((item) => (
-              <article key={item.src} className="portfolio-item">
-                <div className="portfolio-media">
-                  <Image
-                    src={item.src}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 60vw"
-                    className="object-contain"
-                  />
-                </div>
-                <div className="portfolio-caption">
-                  <h3>{item.title}</h3>
-                  <p>{item.type}</p>
-                </div>
-              </article>
-            ))}
-          </div>
+          <article className="portfolio-feature">
+            <div className="portfolio-feature-media">
+              <Image
+                src="/media/campaign-model-feature.jpg"
+                alt="Luxury jewelry model campaign visual"
+                width={2400}
+                height={1477}
+                sizes="(max-width: 860px) calc(100vw - 28px), min(1440px, calc(100vw - 48px))"
+                className="h-auto w-full"
+                priority
+              />
+            </div>
+            <div className="portfolio-caption">
+              <h3>Luxury Model Campaign</h3>
+              <p>AI Campaign Visual</p>
+            </div>
+          </article>
         </section>
 
         <section id="about" className="editorial-band">

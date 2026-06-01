@@ -9,21 +9,7 @@ const css = (await readFile(new URL("../app/globals.css", import.meta.url), "utf
 
 await mkdir(dirname(fileURLToPath(new URL("../outputs/media/hero-motion.mp4", import.meta.url))), { recursive: true });
 await copyFile(new URL("../public/media/hero-motion.mp4", import.meta.url), new URL("../outputs/media/hero-motion.mp4", import.meta.url));
-
-const work = [
-  ["portfolio-bracelet.png", "Gemstone Bracelet", "Product Retouching"],
-  ["diamond-model-campaign.jpg", "Diamond Model Visual", "Campaign Visual"],
-  ["portfolio-ruby-ring.jpg", "Ruby Ring Packshot", "E-commerce Visual"],
-  ["portfolio-earrings-0323.jpg", "Diamond Earrings", "Product Retouching"],
-  ["portfolio-gold-ring.jpg", "Gold Ring", "Packshot Retouching"],
-  ["portfolio-emerald-earrings.jpg", "Emerald Earrings", "Catalog Image"],
-  ["white-gold-sapphire-ring.jpg", "White Gold Sapphire Ring", "Packshot Retouching"],
-  ["portfolio-ring-3062.jpg", "Diamond Ring", "Product Visual"],
-  ["portfolio-earrings-pink.jpg", "Pink Gem Earrings", "Jewelry Photography"],
-  ["portfolio-ring-em-2.jpg", "Emerald Ring", "Product Retouching"],
-  ["portfolio-ring-em-3.jpg", "Emerald Diamond Ring", "E-commerce Visual"],
-  ["portfolio-before-after-earrings.jpg", "Earring Retouch Study", "Before / After"],
-];
+await copyFile(new URL("../public/media/campaign-model-feature.jpg", import.meta.url), new URL("../outputs/media/campaign-model-feature.jpg", import.meta.url));
 
 const services = [
   ["01", "Jewelry Retouching & E-commerce Visuals", "1245645.jpg", "image", "contain", "High-end jewelry image enhancement for e-commerce, catalogs, and digital marketing.", ["White background packshots", "Diamond & gemstone enhancement", "Metal polishing", "Dust, scratch, shadow & reflection refinement", "Clipping path & background cleanup", "E-commerce ready image delivery"], "Jewelry brands / Online stores / Marketplaces / Catalog production"],
@@ -127,13 +113,10 @@ ${css}
             ${title("Selected Work", "Jewelry imagery with a precise visual point of view.", "A portfolio of retouching, product imagery, campaign visuals, and social-ready creative direction.")}
             <p class="work-index">01 / Portfolio</p>
           </div>
-          <div class="portfolio-grid">
-            ${work.map(([src, name, type]) => `
-              <article class="portfolio-item">
-                <div class="portfolio-media"><img src="media/${src}" alt="${name}" /></div>
-                <div class="portfolio-caption"><h3>${name}</h3><p>${type}</p></div>
-              </article>`).join("")}
-          </div>
+          <article class="portfolio-feature">
+            <div class="portfolio-feature-media"><img src="media/campaign-model-feature.jpg" alt="Luxury jewelry model campaign visual" /></div>
+            <div class="portfolio-caption"><h3>Luxury Model Campaign</h3><p>AI Campaign Visual</p></div>
+          </article>
         </section>
 
         <section id="about" class="editorial-band">
