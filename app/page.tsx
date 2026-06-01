@@ -204,11 +204,17 @@ export default function Home() {
               <Image
                 src="/media/campaign-model-feature-v3.png"
                 alt="Luxury jewelry model campaign visual"
-                width={1500}
-                height={923}
+                fill
                 sizes="(max-width: 860px) calc(100vw - 28px), min(1440px, calc(100vw - 48px))"
-                className="h-auto w-full"
+                className="portfolio-feature-image portfolio-feature-image-base"
                 priority
+              />
+              <Image
+                src="/media/campaign-model-feature-product.jpg"
+                alt="Luxury jewelry model campaign visual with original product references"
+                fill
+                sizes="(max-width: 860px) calc(100vw - 28px), min(1440px, calc(100vw - 48px))"
+                className="portfolio-feature-image portfolio-feature-image-product"
               />
             </div>
             <div className="portfolio-caption">
