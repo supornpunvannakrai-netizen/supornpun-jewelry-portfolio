@@ -9,7 +9,7 @@ const css = (await readFile(new URL("../app/globals.css", import.meta.url), "utf
 
 await mkdir(dirname(fileURLToPath(new URL("../outputs/media/hero-motion.mp4", import.meta.url))), { recursive: true });
 await copyFile(new URL("../public/media/hero-motion.mp4", import.meta.url), new URL("../outputs/media/hero-motion.mp4", import.meta.url));
-await copyFile(new URL("../public/media/campaign-model-feature.jpg", import.meta.url), new URL("../outputs/media/campaign-model-feature.jpg", import.meta.url));
+await copyFile(new URL("../public/media/campaign-model-feature-v3.png", import.meta.url), new URL("../outputs/media/campaign-model-feature-v3.png", import.meta.url));
 
 const services = [
   ["01", "Jewelry Retouching & E-commerce Visuals", "1245645.jpg", "image", "contain", "High-end jewelry image enhancement for e-commerce, catalogs, and digital marketing.", ["White background packshots", "Diamond & gemstone enhancement", "Metal polishing", "Dust, scratch, shadow & reflection refinement", "Clipping path & background cleanup", "E-commerce ready image delivery"], "Jewelry brands / Online stores / Marketplaces / Catalog production"],
@@ -114,7 +114,7 @@ ${css}
             <p class="work-index">01 / Portfolio</p>
           </div>
           <article class="portfolio-feature">
-            <div class="portfolio-feature-media"><img src="media/campaign-model-feature.jpg" alt="Luxury jewelry model campaign visual" /></div>
+            <div class="portfolio-feature-media"><img src="media/campaign-model-feature-v3.png" alt="Luxury jewelry model campaign visual" /></div>
             <div class="portfolio-caption"><h3>Luxury Model Campaign</h3><p>AI Campaign Visual</p></div>
           </article>
         </section>

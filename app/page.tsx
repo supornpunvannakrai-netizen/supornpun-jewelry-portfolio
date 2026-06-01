@@ -202,10 +202,10 @@ export default function Home() {
           <article className="portfolio-feature">
             <div className="portfolio-feature-media">
               <Image
-                src="/media/campaign-model-feature.jpg"
+                src="/media/campaign-model-feature-v3.png"
                 alt="Luxury jewelry model campaign visual"
-                width={2400}
-                height={1477}
+                width={1500}
+                height={923}
                 sizes="(max-width: 860px) calc(100vw - 28px), min(1440px, calc(100vw - 48px))"
                 className="h-auto w-full"
                 priority
