@@ -237,6 +237,16 @@ export default function Home() {
                 />
               </div>
             </div>
+            <div className="portfolio-wide-media">
+              <Image
+                src="/media/campaign-diamond-ring-prop.jpg"
+                alt="Diamond ring styled with ivory props"
+                width={2304}
+                height={1556}
+                sizes="(max-width: 860px) calc(100vw - 28px), min(1440px, calc(100vw - 48px))"
+                className="portfolio-wide-image"
+              />
+            </div>
           </article>
         </section>
 

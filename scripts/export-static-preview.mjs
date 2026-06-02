@@ -13,6 +13,7 @@ await copyFile(new URL("../public/media/campaign-model-feature-v3.png", import.m
 await copyFile(new URL("../public/media/campaign-model-feature-product.jpg", import.meta.url), new URL("../outputs/media/campaign-model-feature-product.jpg", import.meta.url));
 await copyFile(new URL("../public/media/campaign-bangle-model.jpg", import.meta.url), new URL("../outputs/media/campaign-bangle-model.jpg", import.meta.url));
 await copyFile(new URL("../public/media/campaign-emerald-model.jpg", import.meta.url), new URL("../outputs/media/campaign-emerald-model.jpg", import.meta.url));
+await copyFile(new URL("../public/media/campaign-diamond-ring-prop.jpg", import.meta.url), new URL("../outputs/media/campaign-diamond-ring-prop.jpg", import.meta.url));
 
 const services = [
   ["01", "Jewelry Retouching & E-commerce Visuals", "1245645.jpg", "image", "contain", "High-end jewelry image enhancement for e-commerce, catalogs, and digital marketing.", ["White background packshots", "Diamond & gemstone enhancement", "Metal polishing", "Dust, scratch, shadow & reflection refinement", "Clipping path & background cleanup", "E-commerce ready image delivery"], "Jewelry brands / Online stores / Marketplaces / Catalog production"],
@@ -125,6 +126,7 @@ ${css}
               <div class="portfolio-diptych-media"><img class="portfolio-diptych-image" src="media/campaign-bangle-model.jpg" alt="Luxury diamond bangle styling on model" /></div>
               <div class="portfolio-diptych-media"><img class="portfolio-diptych-image" src="media/campaign-emerald-model.jpg" alt="Emerald jewelry styling on model" /></div>
             </div>
+            <div class="portfolio-wide-media"><img class="portfolio-wide-image" src="media/campaign-diamond-ring-prop.jpg" alt="Diamond ring styled with ivory props" /></div>
           </article>
         </section>
 
