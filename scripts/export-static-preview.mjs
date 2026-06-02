@@ -11,6 +11,8 @@ await mkdir(dirname(fileURLToPath(new URL("../outputs/media/hero-motion.mp4", im
 await copyFile(new URL("../public/media/hero-motion.mp4", import.meta.url), new URL("../outputs/media/hero-motion.mp4", import.meta.url));
 await copyFile(new URL("../public/media/campaign-model-feature-v3.png", import.meta.url), new URL("../outputs/media/campaign-model-feature-v3.png", import.meta.url));
 await copyFile(new URL("../public/media/campaign-model-feature-product.jpg", import.meta.url), new URL("../outputs/media/campaign-model-feature-product.jpg", import.meta.url));
+await copyFile(new URL("../public/media/campaign-bangle-model.jpg", import.meta.url), new URL("../outputs/media/campaign-bangle-model.jpg", import.meta.url));
+await copyFile(new URL("../public/media/campaign-emerald-model.jpg", import.meta.url), new URL("../outputs/media/campaign-emerald-model.jpg", import.meta.url));
 
 const services = [
   ["01", "Jewelry Retouching & E-commerce Visuals", "1245645.jpg", "image", "contain", "High-end jewelry image enhancement for e-commerce, catalogs, and digital marketing.", ["White background packshots", "Diamond & gemstone enhancement", "Metal polishing", "Dust, scratch, shadow & reflection refinement", "Clipping path & background cleanup", "E-commerce ready image delivery"], "Jewelry brands / Online stores / Marketplaces / Catalog production"],
@@ -119,7 +121,10 @@ ${css}
               <img class="portfolio-feature-image portfolio-feature-image-base" src="media/campaign-model-feature-v3.png" alt="Luxury jewelry model campaign visual" />
               <img class="portfolio-feature-image portfolio-feature-image-product" src="media/campaign-model-feature-product.jpg" alt="Luxury jewelry model campaign visual with original product references" />
             </div>
-            <div class="portfolio-caption"><h3>Luxury Model Campaign</h3><p>AI Campaign Visual</p></div>
+            <div class="portfolio-diptych">
+              <div class="portfolio-diptych-media"><img class="portfolio-diptych-image" src="media/campaign-bangle-model.jpg" alt="Luxury diamond bangle styling on model" /></div>
+              <div class="portfolio-diptych-media"><img class="portfolio-diptych-image" src="media/campaign-emerald-model.jpg" alt="Emerald jewelry styling on model" /></div>
+            </div>
           </article>
         </section>
 

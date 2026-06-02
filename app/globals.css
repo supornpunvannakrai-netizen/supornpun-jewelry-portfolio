@@ -61,6 +61,10 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .portfolio-feature-image-product { opacity: 0; }
 .portfolio-feature:hover .portfolio-feature-image-base { opacity: 0; transform: scale(1.012); }
 .portfolio-feature:hover .portfolio-feature-image-product { opacity: 1; transform: scale(1.018); }
+.portfolio-diptych { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+.portfolio-diptych-media { position: relative; aspect-ratio: 1400 / 1736; overflow: hidden; background: white; }
+.portfolio-diptych-image { object-fit: cover; transition: transform 1s cubic-bezier(.2,.7,.25,1); }
+.portfolio-diptych-media:hover .portfolio-diptych-image { transform: scale(1.025); }
 .portfolio-caption { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding: 13px 0 11px; }
 .portfolio-caption h3, .portfolio-caption p { margin: 0; font-size: 12px; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; }
 .portfolio-caption p { color: var(--muted); text-align: right; }
@@ -197,6 +201,9 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .portfolio-caption p { margin-top: 7px; text-align: left; }
   .portfolio-feature-image-base { opacity: 0; }
   .portfolio-feature-image-product { opacity: 1; }
+  .portfolio-diptych { grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
+  .portfolio-diptych-media { aspect-ratio: auto; }
+  .portfolio-diptych-image { position: relative !important; display: block; width: 100% !important; height: auto !important; }
   .work-intro, .services-head, .packages-head { display: block; margin-bottom: 34px; }
   .work-index, .section-index { margin-top: 20px; }
   .about-grid, .trial-grid, .footer-grid { display: block; }

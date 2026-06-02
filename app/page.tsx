@@ -217,9 +217,25 @@ export default function Home() {
                 className="portfolio-feature-image portfolio-feature-image-product"
               />
             </div>
-            <div className="portfolio-caption">
-              <h3>Luxury Model Campaign</h3>
-              <p>AI Campaign Visual</p>
+            <div className="portfolio-diptych">
+              <div className="portfolio-diptych-media">
+                <Image
+                  src="/media/campaign-bangle-model.jpg"
+                  alt="Luxury diamond bangle styling on model"
+                  fill
+                  sizes="(max-width: 860px) calc(100vw - 28px), min(708px, calc((100vw - 64px) / 2))"
+                  className="portfolio-diptych-image"
+                />
+              </div>
+              <div className="portfolio-diptych-media">
+                <Image
+                  src="/media/campaign-emerald-model.jpg"
+                  alt="Emerald jewelry styling on model"
+                  fill
+                  sizes="(max-width: 860px) calc(100vw - 28px), min(708px, calc((100vw - 64px) / 2))"
+                  className="portfolio-diptych-image"
+                />
+              </div>
             </div>
           </article>
         </section>
