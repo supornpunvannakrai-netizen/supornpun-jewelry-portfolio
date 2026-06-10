@@ -1,9 +1,9 @@
 ﻿UPLOAD TO GITHUB REPOSITORY ROOT
 
-This update redesigns the bottom contact bar for better balance:
-- 4 equal contact columns
-- Phone stays on one line
-- LinkedIn and email buttons stay inside the Connect card
+This update adjusts the bottom contact bar:
+- Email column is wider
+- Phone column is slightly narrower
+- Email stays on one line on desktop
 
 Upload this folder content at the main repository root:
 - app/globals.css
