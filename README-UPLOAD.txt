@@ -1,13 +1,11 @@
-STEP 2 - Upload at GitHub repository root
+﻿UPLOAD TO GITHUB REPOSITORY ROOT
 
-Upload the contents of this folder at the main repository root:
-supornpun-jewelry-portfolio
+This update changes the bottom contact bar layout.
 
-This package includes:
-- app/page.tsx
-- scripts/export-static-preview.mjs
-- public/media/campaign-bangle-model-v2.png
-- public/media/campaign-bangle-product-v2.png
+Upload this folder content at the main repository root:
+- app/globals.css
 
-If GitHub asks to replace existing files, confirm/commit changes.
+GitHub path:
+supornpun-jewelry-portfolio/app/globals.css
+
 After commit, Vercel should redeploy automatically.
