@@ -11,8 +11,8 @@ await mkdir(dirname(fileURLToPath(new URL("../outputs/media/hero-motion.mp4", im
 await copyFile(new URL("../public/media/hero-motion.mp4", import.meta.url), new URL("../outputs/media/hero-motion.mp4", import.meta.url));
 await copyFile(new URL("../public/media/campaign-model-feature-v3.png", import.meta.url), new URL("../outputs/media/campaign-model-feature-v3.png", import.meta.url));
 await copyFile(new URL("../public/media/campaign-model-feature-product.jpg", import.meta.url), new URL("../outputs/media/campaign-model-feature-product.jpg", import.meta.url));
-await copyFile(new URL("../public/media/campaign-bangle-model.jpg", import.meta.url), new URL("../outputs/media/campaign-bangle-model.jpg", import.meta.url));
-await copyFile(new URL("../public/media/campaign-emerald-model.jpg", import.meta.url), new URL("../outputs/media/campaign-emerald-model.jpg", import.meta.url));
+await copyFile(new URL("../public/media/campaign-bangle-model-v2.png", import.meta.url), new URL("../outputs/media/campaign-bangle-model-v2.png", import.meta.url));
+await copyFile(new URL("../public/media/campaign-bangle-product-v2.png", import.meta.url), new URL("../outputs/media/campaign-bangle-product-v2.png", import.meta.url));
 await copyFile(new URL("../public/media/campaign-diamond-ring-prop.jpg", import.meta.url), new URL("../outputs/media/campaign-diamond-ring-prop.jpg", import.meta.url));
 
 const services = [
@@ -123,8 +123,8 @@ ${css}
               <img class="portfolio-feature-image portfolio-feature-image-product" src="media/campaign-model-feature-product.jpg" alt="Luxury jewelry model campaign visual with original product references" />
             </div>
             <div class="portfolio-diptych">
-              <div class="portfolio-diptych-media"><img class="portfolio-diptych-image" src="media/campaign-bangle-model.jpg" alt="Luxury diamond bangle styling on model" /></div>
-              <div class="portfolio-diptych-media"><img class="portfolio-diptych-image" src="media/campaign-emerald-model.jpg" alt="Emerald jewelry styling on model" /></div>
+              <div class="portfolio-diptych-media"><img class="portfolio-diptych-image" src="media/campaign-bangle-model-v2.png" alt="Luxury gold diamond bangle styling on model" /></div>
+              <div class="portfolio-diptych-media"><img class="portfolio-diptych-image" src="media/campaign-bangle-product-v2.png" alt="Luxury gold diamond bangle product visual" /></div>
             </div>
             <div class="portfolio-wide-media"><img class="portfolio-wide-image" src="media/campaign-diamond-ring-prop.jpg" alt="Diamond ring styled with ivory props" /></div>
           </article>

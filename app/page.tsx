@@ -220,8 +220,8 @@ export default function Home() {
             <div className="portfolio-diptych">
               <div className="portfolio-diptych-media">
                 <Image
-                  src="/media/campaign-bangle-model.jpg"
-                  alt="Luxury diamond bangle styling on model"
+                  src="/media/campaign-bangle-model-v2.png"
+                  alt="Luxury gold diamond bangle styling on model"
                   fill
                   sizes="(max-width: 860px) calc(100vw - 28px), min(708px, calc((100vw - 64px) / 2))"
                   className="portfolio-diptych-image"
@@ -229,8 +229,8 @@ export default function Home() {
               </div>
               <div className="portfolio-diptych-media">
                 <Image
-                  src="/media/campaign-emerald-model.jpg"
-                  alt="Emerald jewelry styling on model"
+                  src="/media/campaign-bangle-product-v2.png"
+                  alt="Luxury gold diamond bangle product visual"
                   fill
                   sizes="(max-width: 860px) calc(100vw - 28px), min(708px, calc((100vw - 64px) / 2))"
                   className="portfolio-diptych-image"
