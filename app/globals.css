@@ -167,12 +167,12 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .footer-info { display: grid; align-content: end; gap: 8px; color: rgba(255,255,255,.72); font-size: 14px; line-height: 1.6; }
 .footer-info p { margin: 0; }
 .footer-info a { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.38); margin-top: 19px; padding-top: 13px; color: white; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; }
-.contact-strip { display: grid; grid-template-columns: minmax(360px, 1.35fr) minmax(210px, .72fr) minmax(280px, 1fr) minmax(300px, 1fr); align-items: stretch; margin-top: 68px; overflow: hidden; background: linear-gradient(112deg, #fffaf1, #f5eadb); color: var(--ink); border: 1px solid rgba(169,123,54,.28); box-shadow: 0 -24px 80px rgba(0,0,0,.18); }
+.contact-strip { display: grid; grid-template-columns: minmax(0, 1.42fr) minmax(0, .82fr) minmax(0, 1.05fr) minmax(0, 1fr); align-items: stretch; margin-top: 68px; overflow: hidden; background: linear-gradient(112deg, #fffaf1, #f5eadb); color: var(--ink); border: 1px solid rgba(169,123,54,.28); box-shadow: 0 -24px 80px rgba(0,0,0,.18); }
 .contact-item { display: grid; align-content: center; justify-items: center; gap: 13px; min-width: 0; min-height: 138px; padding: 25px 22px; color: var(--ink); text-align: center; border-right: 1px solid rgba(169,123,54,.25); }
 .contact-item:last-child { border-right: 0; }
 .contact-item strong { display: block; margin-bottom: 8px; font-size: 13px; letter-spacing: .12em; line-height: 1; }
-.contact-item em { display: block; color: var(--muted); font-style: normal; font-size: 15px; line-height: 1.35; overflow-wrap: anywhere; }
-.contact-item:first-child em { white-space: nowrap; overflow-wrap: normal; }
+.contact-item em { display: block; max-width: 100%; color: var(--muted); font-style: normal; font-size: 15px; line-height: 1.35; overflow-wrap: anywhere; }
+.contact-item:first-child em { white-space: nowrap; overflow-wrap: normal; font-size: clamp(13px, .92vw, 15px); }
 .contact-item[href^="tel"] em,
 .contact-connect em { white-space: nowrap; }
 .contact-item > span:not(.contact-icon) { min-width: 0; max-width: 100%; }

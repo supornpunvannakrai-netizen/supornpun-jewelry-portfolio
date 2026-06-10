@@ -1,9 +1,9 @@
 ﻿UPLOAD TO GITHUB REPOSITORY ROOT
 
-This update adjusts the bottom contact bar:
-- Email column is wider
-- Phone column is slightly narrower
-- Email stays on one line on desktop
+This update fixes the bottom contact bar overflow:
+- Connect column no longer gets cut off on the right
+- Email column is wider but does not force the whole bar wider than the screen
+- Phone remains compact
 
 Upload this folder content at the main repository root:
 - app/globals.css
