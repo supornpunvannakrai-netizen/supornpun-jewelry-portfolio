@@ -1,6 +1,6 @@
 ﻿UPLOAD TO GITHUB REPOSITORY ROOT
 
-This update changes the bottom contact bar layout.
+This update fixes the footer contact bar so LinkedIn and email buttons stay inside the frame.
 
 Upload this folder content at the main repository root:
 - app/globals.css
