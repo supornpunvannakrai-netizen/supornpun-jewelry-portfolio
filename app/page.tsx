@@ -228,12 +228,16 @@ export default function Home() {
                 />
               </div>
               <div className="portfolio-diptych-media">
-                <Image
-                  src="/media/campaign-bangle-product-v2.png"
-                  alt="Luxury gold diamond bangle product visual"
-                  fill
-                  sizes="(max-width: 860px) calc(100vw - 28px), min(708px, calc((100vw - 64px) / 2))"
+                <video
+                  src="/media/campaign-bangle-motion-0614.mp4"
+                  poster="/media/campaign-bangle-product-v2.png"
                   className="portfolio-diptych-image"
+                  aria-label="Luxury gold diamond bangle motion visual"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
                 />
               </div>
             </div>
